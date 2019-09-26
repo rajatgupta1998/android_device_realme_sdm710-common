@@ -1,0 +1,12 @@
+on init
+    chown system system /sys/kernel/oppo_display/notify_fppress
+    chown system system /sys/kernel/oppo_display/dim_alpha
+    chmod 0660 /sys/kernel/oppo_display/notify_fppress
+    chmod 0660 /sys/kernel/oppo_display/dim_alpha
+
+service fingerprint-inscreen-1-0 /system/bin/hw/lineage.biometrics.fingerprint.inscreen@1.0-service.realme_sdm710
+    interface vendor.lineage.biometrics.fingerprint.inscreen@1.0::IFingerprintInscreen default
+    class hal
+    user system
+    group system
+    shutdown critical
