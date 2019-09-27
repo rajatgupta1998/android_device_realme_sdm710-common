@@ -50,6 +50,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     OppoDoze
 
+# Fingerprint
+PRODUCT_PACKAGES +=\
+    android.hardware.biometrics.fingerprint@2.1-service.realme_sdm710 \
+    lineage.biometrics.fingerprint.inscreen@1.0-service.realme_sdm710
+
 # IMS
 PRODUCT_PACKAGES += \
     ims-ext-common
