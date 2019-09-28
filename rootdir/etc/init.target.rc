@@ -13,12 +13,7 @@ on boot
 
     # FP
     chown system system /dev/goodix_fp
-
-service oppo_fingerprints_sh /vendor/bin/sh /vendor/bin/init.oppo.fingerprints.sh
-    class main
-    user root
-    oneshot
-    seclabel u:r:rutilsdaemon:s0
+    chown system system /dev/esfp0
 
 on post-fs-data
     mkdir /data/gf_data 0700 system system
@@ -39,5 +34,19 @@ on post-fs-data
     mkdir /data/vendor/fingerprint 0770 system system
     mkdir /mnt/vendor/persist/fingerprint 0770 system system
     chown system system /sys/kernel/oppo_display/hbm
+    chmod 0660 /sys/kernel/oppo_display/hbm
     mkdir /data/vendor/silead 0770 system system
     mkdir /mnt/vendor/persist/fingerprint/silead 0770 system system
+    mkdir /data/vendor/egis   0770 system system
+
+    start hypnus_context
+
+service oppo_fingerprints_sh /vendor/bin/sh /vendor/bin/init.oppo.fingerprints.sh
+    class main
+    user root
+    oneshot
+
+service hypnus_context /system/bin/sh /system/bin/init.oppo.hypnus.sh
+    user root
+    disabled
+    oneshot

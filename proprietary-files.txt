@@ -43,6 +43,7 @@ framework/vendor.oppo.hardware.biometrics.fingerprint-V2.1-java.jar
 framework/vendor.qti.hardware.fingerprint-V1.0-java.jar
 lib/vendor.oppo.hardware.biometrics.fingerprint@2.1.so
 lib64/vendor.oppo.hardware.biometrics.fingerprint@2.1.so
+lib/modules/hypnus.ko
 
 # GPS
 etc/permissions/com.qti.location.sdk.xml

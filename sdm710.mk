@@ -38,7 +38,8 @@ PRODUCT_PACKAGES += \
 
 # Common init scripts
 PRODUCT_PACKAGES += \
-    init.target.rc
+    init.target.rc \
+    init.oppo.hypnus.sh
 
 # Display
 PRODUCT_PACKAGES += \
