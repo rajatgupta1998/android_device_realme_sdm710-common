@@ -62,8 +62,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     iop.enable_prefetch_ofr=1 \
     iop.enable_uxe=0 \
-    ro.vendor.qti.core_ctl_min_cpu=2 \
-    ro.vendor.qti.core_ctl_max_cpu=4
+    ro.vendor.qti.core_ctl_min_cpu=4 \
+    ro.vendor.qti.core_ctl_max_cpu=6
 
 # RCS and IMS
 PRODUCT_PROPERTY_OVERRIDES += \
