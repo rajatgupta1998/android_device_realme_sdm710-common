@@ -81,3 +81,4 @@ rild.libpath=/vendor/lib64/libril-qc-hal-qmi.so
 # SSR
 persist.vendor.ssr.enable_ramdumps=0
 persist.vendor.ssr.restart_level=ALL_ENABLE
+lineage.updater.uri=https://raw.githubusercontent.com/rajatgupta1998/lineage_releases/master/17.1.json
